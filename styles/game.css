@@ -1,0 +1,81 @@
+#game-screen {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.score-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    width: 75vw;
+    margin-bottom: 20px;
+}
+
+#battlefield {
+    border: solid black 1px;
+    height: 25vh;
+    width: 50vw;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color:rgba(221, 140, 34, 0.3);
+    border-radius: 20px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.button {
+    border: solid black 2px;
+    width: 8%;
+    height: auto;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 10px;
+    filter: hue-rotate(90deg);
+}
+
+.button:hover {
+    box-shadow: 0px 10px 10px rgb(44, 44, 44);
+    transform: scale(1.05);
+}
+
+.button:active {
+    box-shadow: 0 2px rgb(92, 92, 92);
+    transform: translateY(5px);
+}
+
+.battlefield-img-human {
+    width: 15%;
+    height: auto;
+    border-radius: 50%;
+    border: solid black 2px;
+    filter: hue-rotate(90deg);
+}
+
+.battlefield-img-computer {
+    width: 15%;
+    height: auto;
+    border-radius: 50%;
+    border: solid black 2px;
+    transform: rotateY(180deg);
+}
+
+.directions-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 200;
+    font-family: 'Roboto', sans-serif;
+}
