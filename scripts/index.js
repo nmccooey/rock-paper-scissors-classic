@@ -51,7 +51,7 @@ function startGame() {
         // Check if human won.
         if (weapons[humanChoice].strongTo == computerChoice) {
             humanScore++;
-            if(humanScore == 2) {
+            if(humanScore == 5) {
                 declareWinner("human");
             } else {
                 gameStatus.innerText = "You WON this round!";
@@ -64,7 +64,7 @@ function startGame() {
         // Check if computer won.
         if (weapons[humanChoice].weakTo == computerChoice) {
             computerScore++;
-            if(computerScore == 2) {
+            if(computerScore == 5) {
                 declareWinner("computer");
             } else {
                 gameStatus.innerText = "You LOST this round!";
@@ -97,8 +97,12 @@ function startGame() {
             winnerStatus.style.backgroundColor = "#74eb34";
         } else if (winner === "computer") {
             winnerStatus.innerText = "You LOST the GAME!";
-            winnerStatus.style.backgroundColor = "#AE191A";
+            winnerStatus.style.backgroundColor = "#f04848";
         }
+
+        playAgainButton.addEventListener("click", function(){
+            location.reload();
+        });
     }
 }
 
@@ -109,7 +113,7 @@ function getRandomInt(max) {
 
 // Renders game components to the screen.
 function renderGameComponents() {
-    //startBackgroundMusic();
+    startBackgroundMusic();
     document.querySelector(".rock").addEventListener("click", playSound);
     document.querySelector(".paper").addEventListener("click", playSound);
     document.querySelector(".scissors").addEventListener("click", playSound);

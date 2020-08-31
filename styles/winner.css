@@ -5,3 +5,26 @@
     justify-content: center;
     display: none;
 }
+
+#winner-status {
+    font-size: 30px;
+}
+
+#play-again-button {
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    background-color: #2b7897;
+    color: white;
+    font-family: 'Krona One', sans-serif;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+#play-again-button:hover {
+    background-color: #3FC8FF;
+}
+
+#play-again-button:focus {
+    outline: none;
+}
