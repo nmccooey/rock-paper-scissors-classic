@@ -1,61 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Rock Paper Scissors Classic</title>
-        <link rel="stylesheet" href="styles/style.css"></link>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors Classic</title>
+    <link rel="stylesheet" href="styles/style.css" />
 
-        <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Roboto:wght@200&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Krona+One&family=Roboto:wght@200&display=swap"
+    />
 
-        <!-- Favicon -->
-        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-        <link rel="manifest" href="site.webmanifest">
-    </head>
-    <body>
-        <!-- Menu Screen -->
-        <div id="menu-screen">
-            <h1 class="game-title">Rock, Paper, Scissors</h1>
-            <h2>Classic</h2>
-            <button id="play-button">Start Game</button>
-        </div>
-        
-        <!-- Game Screen -->
-        <div id="game-screen">
-            <h1 class="game-title">Rock, Paper, Scissors</h1>
-            <h2 id="game-status">Classic</h2>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
+  </head>
+  <body>
+    <!-- Menu Screen -->
+    <div id="menu-screen">
+      <h1 class="game-title">Rock, Paper, Scissors</h1>
+      <h2>Classic</h2>
+      <button id="play-button">Start Game</button>
+    </div>
 
-            <!-- Battlefield -->
-            <div id="battlefield">
-            </div>
+    <!-- Game Screen -->
+    <div id="game-screen">
+      <h1 class="game-title">Rock, Paper, Scissors</h1>
+      <h2 id="game-status">Classic</h2>
 
-            <!-- Scores -->
-            <div class="score-container">
-                <p>Your Score: <span id="human-score">0</span></p>
-                <p>Computer Score: <span id="computer-score">0</span></p>
-            </div>
+      <!-- Battlefield -->
+      <div id="battlefield"></div>
 
-            <!-- Buttons -->
-            <div class="button-container">
-                <img src="images/rock.png" class="rock button" data="Rock"></img>
-                <img src="images/paper.png" class="paper button" data="Paper"></img>
-                <img src="images/scissors.png" class="scissors button" data="Scissors"></img>
-            </div>
+      <!-- Scores -->
+      <div class="score-container">
+        <p>Your Score: <span id="human-score">0</span></p>
+        <p>Computer Score: <span id="computer-score">0</span></p>
+      </div>
 
-            <!-- Directions -->
-            <div class="directions-container"><p>The player who wins five rounds first wins the game.</p></div>
-        </div>
+      <!-- Buttons -->
+      <div class="button-container">
+        <img src="images/rock.png" class="rock button" data="Rock" />
+        <img src="images/paper.png" class="paper button" data="Paper" />
+        <img
+          src="images/scissors.png"
+          class="scissors button"
+          data="Scissors"
+        />
+      </div>
 
-        <!-- Winner Screen -->
-        <div id="winner-screen">
-            <h2 class="winner-status"></h2>
-            <button id="play-again-button">Play Again?</button>
-        </div>
+      <!-- Directions -->
+      <div class="directions-container">
+        <p>The player who wins five rounds first wins the game.</p>
+      </div>
+    </div>
 
+    <!-- Winner Screen -->
+    <div id="winner-screen">
+      <h2 class="winner-status"></h2>
+      <button id="play-again-button">Play Again?</button>
+    </div>
 
-        <script type="text/javascript" src="scripts/index.js"></script>
-    </body>
+    <script type="text/javascript" src="scripts/index.js"></script>
+  </body>
 </html>

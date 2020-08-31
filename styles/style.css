@@ -1,49 +1,49 @@
 @import url("game.css");
 @import url("winner.css");
 
-html, body {
-    margin: 0px;
-    padding: 0px;
-    height: 100vh;
-    font-family: 'Krona One', sans-serif;
-    background:
-    radial-gradient(white 15%, transparent 16%) 0 0,
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  height: 100vh;
+  font-family: "Krona One", sans-serif;
+  background: radial-gradient(white 15%, transparent 16%) 0 0,
     radial-gradient(white 15%, transparent 16%) 8px 8px,
-    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
-    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
-    background-color: #f7f7f7;
-    background-size: 16px 16px;
+    radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 0 1px,
+    radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 8px 9px;
+  background-color: #f7f7f7;
+  background-size: 16px 16px;
 }
 
 #menu-screen {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 #play-button {
-    cursor: pointer;
-    width: 200px;
-    height: 50px;
-    background-color: #075700;
-    color: white;
-    font-family: 'Krona One', sans-serif;
-    border-radius: 20px;
-    font-size: 20px;
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+  background-color: #075700;
+  color: white;
+  font-family: "Krona One", sans-serif;
+  border-radius: 20px;
+  font-size: 20px;
 }
 
 #play-button:hover {
-    background-color: #1c9b10;
+  background-color: #1c9b10;
 }
 
 #play-button:focus {
-    outline: none;
+  outline: none;
 }
 
 .game-title {
-    text-transform: uppercase;
-    margin-bottom: 10px;
-    text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  text-align: center;
 }
