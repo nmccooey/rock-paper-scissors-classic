@@ -25,13 +25,13 @@ body {
 
 #play-button {
   cursor: pointer;
-  width: 200px;
-  height: 50px;
+  width: 300px;
+  height: 100px;
   background-color: #075700;
   color: white;
   font-family: "Krona One", sans-serif;
   border-radius: 20px;
-  font-size: 20px;
+  font-size: 2rem;
 }
 
 #play-button:hover {
@@ -46,4 +46,17 @@ body {
   text-transform: uppercase;
   margin-bottom: 10px;
   text-align: center;
+  font-size: 4em;
+}
+
+@media (max-width: 600px) {
+  .game-title {
+    font-size: 2em;
+  }
+
+  #play-button {
+    width: 200px;
+    height: 50px;
+    font-size: 1.5rem;
+  }
 }
